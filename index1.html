@@ -1,0 +1,24 @@
+<div id="container">
+  <!-- populated by JS-->
+</div>
+<script src="./Boston.js"></script>
+<script>
+  function renderPosts(boston, container) {
+    var person = boston.data
+    var len = boston.data.length
+    var html = '';
+    for (let i = 0; i < len; i++) {
+      html += '<li class="post">' +
+        '<h2>' + person[i].title + '</h2>' +
+        '<h3>' + person[i][11].content + '</h3>'
+    }
+    container.innerHTML = '<ul id = "Boston">' + html + '</ul>';
+  }
+  renderPosts(boston, document.getElementById('container'));
+</script>
+
+//wasn't sure how I can create a loop such that the console prints that value and removes it if the next one is larger than the previous one
+
+The HTML element containing the top earners should have an ID of "topSalaries"
+The Html element containing the top earners should have and id of "topSalaries"
+Not sure what this part of the exercise was about
